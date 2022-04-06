@@ -1,0 +1,133 @@
+* {
+    /* border: 1px orangered dotted; */
+}
+
+body {
+    display: flex;
+    /* border: 1px green dotted; */
+    background-image: url("assets/comp.jpeg"); /*refrence image*/
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background-size: cover; */
+}
+
+.button {
+    cursor: pointer;
+}
+
+.sidebar {
+    /* border: 1px black dotted; */
+    overflow: hidden;
+    width: 18%;
+    height: 100vh;
+    /* background-color: pink; */
+    background-color: #354052;
+    color: #868EA1;
+}
+
+.sidebar_picture-container {
+    width: 100%;
+    height: 13vw;
+    overflow: hidden;
+    border-bottom: 3px solid #30394A;
+}
+.sidebar_nav-container {
+
+    width: 100%;
+    height: 21vw;
+    overflow: hidden;
+    border-bottom: 3px solid #30394A;
+    /* background-color: #354052; */
+}
+
+.main {
+    border: 1px black dotted;
+    width: 100%;
+    overflow: scroll;
+}
+
+.main_nav {
+    display: flex;
+    border-bottom: 2px #D9E4EA solid;
+    height: 6vw;
+    width: 100%;
+}
+
+.nav_button {
+    height: 100%;
+    width: 10%;
+    border: 1px white solid;
+    background-color: white;
+    border: 1px #D9E4EA solid;
+    text-align: center;
+}
+
+.nav_button:hover {
+    height: 100%;
+    width: 10%;
+    border: 1px white solid;
+    background-color: #3AA3F9;
+    cursor: pointer;
+    border: 1px #D9E4EA solid;
+    text-align: center;
+}
+
+.nav_button:checked {
+    height: 100%;
+    width: 10%;
+    border: 1px white solid;
+    background-color: #3AA3F9;
+    border-right: 1px #D9E4EA solid;
+}
+
+.radio  {
+    display: none;
+}
+
+input { /* need to update to class target  */
+    border: white;
+    width: 100%;
+}
+
+.main_title-container {
+    /* background-color: pink; */
+    height: 10vw;
+}
+
+.main_statistics-container {
+    height: 30vw;
+}
+
+.statistics_tabs-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    height: 5vw;
+}
+
+.statistics_charts-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #EDF2F7;
+    height: 100%;
+    border-top: 2px #D9E4EA solid;
+    border-bottom: 2px #D9E4EA solid;
+}
+
+.main_details-container {
+    /* background-color: pink; */
+    height: 70vw;
+}
+
+.collapsed {
+    height: 0;
+}
+
+.hidden {
+    display: none;
+}
